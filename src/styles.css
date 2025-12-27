@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: radial-gradient(#450400, #000);
+  background-color: rgb(0, 0, 0);
+  font-family: Poppins, sans-serif;
+}
+
+.three-container,
+.fallback {
+  position: fixed;
+  inset: 0;
+}
+
+.title {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  color: gold;
+  text-shadow: 0 0 30px gold;
+  pointer-events: none;
+}
+
+
+
+/* Card1 css start*/
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  90% {
+    transform: scale(1);
+  }
+  100% {}
+}
+
+.pop-in {
+  display: inline-block;
+  animation: popIn 0.6s forwards;
+  z-index: 100;
+}
+/* card-1 ended */
